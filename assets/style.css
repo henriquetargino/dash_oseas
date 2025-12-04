@@ -1,0 +1,81 @@
+/* Custom App CSS Below --------------------------------- */
+
+/* --- 1. PADRONIZAÇÃO DOS CARDS DE DADOS --- */
+.card {
+  margin-top: 10px;
+  box-shadow: 2px 2px 10px 0px rgba(10, 9, 7, 0.05);
+  height: 100%; /* Garante que o Card ocupe toda a altura da coluna */
+  border: none; /* Remove borda padrão se quiser um visual mais limpo */
+  min-width: 220px; /* Largura mínima para evitar encolhimento excessivo */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center;     /* Centraliza horizontalmente */
+  padding: 1.5rem;         /* Espaçamento interno */
+}
+
+/* Título do Card (Ex: "Clicks", "Spend") */
+.card-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.05); /* Fundo levemente escuro no header */
+  border-bottom: none;
+}
+
+/* Classe específica para os NÚMEROS (Preto e Grande) */
+.data-value {
+    color: #225081 !important; /* Força a cor preta */
+    font-size: 28px !important;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* --- 2. CORREÇÃO DOS DROPDOWNS (SELECT BOX) --- */
+/* Isso corrige o problema do "branco no branco" causado pelo tema Darkly */
+
+/* Cor do texto e fundo do controle principal */
+.Select-control {
+    background-color: #ffffff !important; /* Fundo branco */
+    color: #000000 !important;            /* Texto preto */
+    border: 1px solid #ccc !important;
+}
+
+/* Cor do texto selecionado */
+.Select-value-label {
+    color: #000000 !important;
+}
+
+/* Cor do placeholder (texto "Select..." quando vazio) */
+.Select-placeholder {
+    color: #666 !important;
+}
+
+/* Menu de opções (a lista que abre) */
+.Select-menu-outer {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #ccc !important;
+}
+
+/* Opção individual no menu */
+.VirtualZedSelect-option {
+    color: #000000 !important;
+    background-color: #ffffff;
+}
+
+/* Opção quando o mouse passa por cima (Hover) */
+.VirtualZedSelect-option:hover, .VirtualZedSelect-option.is-focused {
+    background-color: #f0f0f0 !important;
+    color: #000000 !important;
+}
+
+/* Ajuste para Radio Items (Bolinhas de seleção) */
+.form-check-label {
+    margin-right: 15px; /* Espaço entre as opções */
+    font-size: 1.1rem;
+}
