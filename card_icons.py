@@ -1,7 +1,6 @@
 from dash import html, dcc
 from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
-from pyrsistent import b
 from app import *
 import pandas as pd
 from graph_api import *
