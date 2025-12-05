@@ -13,8 +13,8 @@ style_sidebar = {"box-shadow": "2px 2px 10px 0px rgba(10, 9, 7, 0.10)",
 layout = dbc.Card(
     [
         html.Div([
-            html.Img(src="/assets/logo.jpeg", style={"width": "80%", "height": "auto"})
-        ], style={"textAlign": "center", "marginBottom": "10px", "marginTop": "15px"}),
+            html.Img(src="/assets/logo.jpeg", style={"width": "60%", "height": "auto"})
+        ], style={"textAlign": "center", "marginBottom": "0px", "marginTop": "15px"}),
         
         html.Hr(), 
         html.P("Painel de Controle", className="lead", style={"textAlign": "center"}),
