@@ -80,7 +80,7 @@ layout = html.Div([
                 dbc.Col([
                     html.H4("Selecione o indicador:"),
                     dcc.RadioItems(options=['Spend', 'CPC', 'CPM', 'Clicks', 'Conversion'], 
-                                value='Conversion', id='adset-kind', 
+                                value='Spend', id='adset-kind', 
                                 inputStyle={"margin-right": "5px", "margin-left": "20px"}),
                 ], md=6),
                 
@@ -98,7 +98,7 @@ layout = html.Div([
                             {"label": "Este Mês", "value": "this_month"},
                             {"label": "Mês Passado", "value": "last_month"},
                         ],
-                        value='maximum', 
+                        value='last_30d', 
                         id='dd-date-preset-adset',
                         clearable=False
                     ),
